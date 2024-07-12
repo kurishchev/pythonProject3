@@ -10,5 +10,8 @@ def get_multiplied_digits(number):
     return x
 
 
-h = input('Введите целое число: ')
-print('Произведение цифр равно: ', get_multiplied_digits(h))
+h = int(input('Введите целое число: '))
+if h == 0:
+    print('Произведение цифр равно: 0')
+else:
+    print('Произведение цифр равно: ', get_multiplied_digits(h))
